@@ -7,10 +7,10 @@ module load Megahit/v1.1.4
 
 # Kmere value: must be and odd number in the range 15-255. 
 # Make sure that the read length is longer than the kmer value.
-KMER=99
+KMER=
 
 # Name of the analysis. Will prefix the output filenames.
-SAMPLE="test_99"
+SAMPLE="test_X"
 
 # Input files in fastq format.
 FILE1=/db/Teaching/Assembly/Kordia/MPL/KordiaSMS9_MPL_1.fastq
