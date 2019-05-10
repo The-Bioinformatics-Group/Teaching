@@ -3,7 +3,7 @@
 #$ -pe mpi 4
 #$ -S /bin/bash
 
-module load Megahit/v1.1.4
+module load MegaHit/v1.1.4
 
 # Kmere value: must be and odd number in the range 15-255. 
 # Make sure that the read length is longer than the kmer value.
