@@ -1,6 +1,6 @@
 #$ -cwd
 #$ -q sandbox
-#$ -pe mpi
+#$ -pe mpi 4
 #$ -S /bin/bash
 
 module load Megahit/v1.1.4
