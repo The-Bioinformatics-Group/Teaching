@@ -26,7 +26,7 @@ Continuation of the math lectures in MAV101
 
 ## Programming
 
-Using the learning platform [Runestone](https://runestone.academy) and the interactive eBook 
+Using the learning platform [Runestone](https://runestone.academy) and the interactive eBook "How to Think Like a Computer Scientist".
 
 * Introduction
 	- Algorithms 
