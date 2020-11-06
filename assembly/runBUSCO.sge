@@ -1,0 +1,18 @@
+#$ -cwd
+#$ -q QUEUE
+#$ -pe mpi 8
+#$ -S /bin/bash
+
+module load BUSCO/v3.1.0
+module load Anaconda3/v2018.12
+module load blast/v2.10.0
+
+AUGUSTUS_CONFIG_PATH=/home/${USER}/BUSCO/config
+
+# Enter the names of your input file (your genome assembly, ending in .contigs.fa)  
+# and output directory (give it a sensible name) in the variables below
+
+INFILE=
+OUTDIR=
+
+run_BUSCO.py -i $INFILE -o $OUTDIR -l /db/busco_dbs/bacteria_odb9 -m geno -c $NSLOTS

@@ -1,0 +1,8 @@
+#$ -cwd
+#$ -q QUEUE
+#$ -pe mpi 1
+#$ -S /bin/bash
+
+module load FastQC/v0.11.8
+
+# Add your FastQC command below!

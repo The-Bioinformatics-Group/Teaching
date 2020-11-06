@@ -1,0 +1,8 @@
+#$ -cwd
+#$ -q QUEUE
+#$ -pe mpi 8
+#$ -S /bin/bash
+
+module load TrimGalore/v0.6.0
+
+# Add your Trim Galore! command below!

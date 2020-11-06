@@ -1,0 +1,8 @@
+#$ -cwd
+#$ -q QUEUE
+#$ -pe mpi 8
+#$ -S /bin/bash
+
+module load Anaconda3/v2019.10
+
+# Add your Cutadapt command below!
