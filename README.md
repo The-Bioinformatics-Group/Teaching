@@ -1,4 +1,4 @@
 # Teaching
 
 * [Phylogenomics](https://github.com/The-Bioinformatics-Group/Teaching/wiki/Webbased-Phylogenomic-analysis)
-* [Genome assembly](https://github.com/The-Bioinformatics-Group/Teaching/wiki/Genome-assembly-exercise)
+* [QC, Genome assembly and Evaluation](https://github.com/The-Bioinformatics-Group/Teaching/wiki/Quality-control-of-high-throughput-sequence-data)
