@@ -1,5 +1,5 @@
 #$ -cwd
-#$ -q QUEUE
+#$ -q Annotation-3,Annotation-4,sandbox
 #$ -pe mpi 8
 #$ -S /bin/bash
 

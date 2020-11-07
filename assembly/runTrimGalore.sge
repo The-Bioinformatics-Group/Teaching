@@ -1,8 +1,28 @@
 #$ -cwd
-#$ -q QUEUE
+#$ -q Annotation-3,Annotation-4,sandbox
 #$ -pe mpi 8
 #$ -S /bin/bash
 
 module load TrimGalore/v0.6.0
 
-# Add your Trim Galore! command below!
+# Add your Trim Galore! parameters below!
+
+INFILE1=
+INFILE2=
+
+TRIM1=
+TRIM2=
+
+QUALITY=
+
+# ... and make sure you understand what the command below is doing!
+
+trim_galore -j $NSLOTS \
+	--paired \
+	--fastqc \
+	--illumina \
+	--clip_R1 $TRIM1 \
+	--clip_R2 $TRIM2 \
+	-q $QUALITY \
+	$INFILE1 \
+	$INFILE2

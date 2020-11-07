@@ -1,8 +1,32 @@
 #$ -cwd
-#$ -q QUEUE
+#$ -q Annotation-3,Annotation-4,sandbox
 #$ -pe mpi 8
 #$ -S /bin/bash
 
 module load Anaconda3/v2019.10
 
-# Add your Cutadapt command below!
+# Add your Cutadapt parameters below!
+
+INFILE1=
+INFILE2=
+
+OUTFILE1=
+OUTFILE2=
+
+TRIM1=
+TRIM2=
+
+QUALITY=
+
+# ... and make sure you understand what the command below is doing!
+
+cutadapt -j $NSLOTS \
+	-a AGATCGGAAGAG \
+	-A AGATCGGAAGAG \
+	-q $QUALITY \
+	-u $TRIM1 \
+	-U $TRIM2 \
+	-o $OUTFILE1 \
+	-p $OUTFILE2 \
+	$INFILE1 \
+	$INFILE2

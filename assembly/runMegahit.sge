@@ -1,5 +1,5 @@
 #$ -cwd
-#$ -q QUEUE
+#$ -q Annotation-3,Annotation-4,sandbox
 #$ -pe mpi 8
 #$ -S /bin/bash
 
@@ -18,5 +18,6 @@ FILE2=
 
 # Run the assembly analysis
 megahit --k-list $KMER -1 $FILE1 -2 $FILE2 -t $NSLOTS -o $SAMPLE --out-prefix $SAMPLE --keep-tmp-files
+
 # ... and save the assembly graph to a file.
 megahit_toolkit contig2fastg $KMER ${SAMPLE}/intermediate_contigs/k${KMER}.contigs.fa > k${KMER}.fastg
